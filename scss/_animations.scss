@@ -1,0 +1,44 @@
+.has-fade {
+    visibility: hidden;
+}
+
+
+
+@keyframes fade-in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+    }
+
+}
+.fade-in {
+    animation: fade-in 200ms ease-in-out forwards; // forwards means that it will stay the same after the animation and not reset back
+}
+
+@keyframes fade-out {
+    from {
+        visibility: visible;
+        opacity: 0.7;
+    }
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+}
+
+
+.fade-out {
+    animation: fade-out 200ms ease-in-out forwards; // forwards means that it will stay the same after the animation and not reset back
+}

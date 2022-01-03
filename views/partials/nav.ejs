@@ -1,0 +1,43 @@
+<header class= "header">
+    <div class="overlay has-fade"></div>
+
+<nav class = "container flex flex-jc-sb flex-ai-c">
+    <a href = "/" class = "header__logo hide-for-mobile"> 
+      <img src="images\logo.png" alt="BKIOT" >
+    </a>
+    <a href = "/" class = "header__logo__mobile hide-for-desktop">
+      <img src="images\logo.png" alt="BKIOT" >
+    </a>
+    
+    <a id="btnHamburger" href= "#" class= "header__toggle hide-for-desktop"> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+
+    <div class="header__links hide-for-mobile">
+      <a href="/home" >Home</a>
+      <a href="/about" >About Us</a>
+      <a href="/login" >Log In</a>
+      <a href="/signup" >Sign Up</a>
+    </div>
+
+    <form method = 'post' action='/logout'>
+      <button class = "button hide-for-mobile">Log Out</button>
+  </form>
+
+  </nav>
+  <div class="header__space hide-for-mobile">
+    <span></span>
+  </div>
+  <div class= "header__menu has-fade">
+    <a href="/home">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/login" >Log In</a>
+    <a href="/signup" >Sign Up</a>
+    <form method = 'post' action='/logout'>
+    <button class = "button1" >Log Out</button>
+  </form>
+  </div>
+  
+</header>

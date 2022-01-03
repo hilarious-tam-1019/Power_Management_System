@@ -1,0 +1,53 @@
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    
+
+    
+<div class = "login">
+    <form id="login-form" class="login-form">
+        <div class="login-form__logo-container">
+            <img class="login-form__logo" src="/images/logo.png" alt="Logo">
+        </div>
+        <div class="login-form__content">
+            <div class="login-form__header">Log in to your account</div>
+            <input class="login-form__input" type="text" id="email" placeholder="Username">
+            <input class="login-form__input" type="password" id= "password" placeholder="Password">
+            <button class="login-form__button" type="submit">Log In</button>
+
+            
+        </div>
+    </form>
+</div>
+    
+    
+</body>
+
+<script src="script.js"></script>
+<script src="loginform.js"></script> 
+</html>
+
+<!-- 
+<div class="login_container">
+    <h1>
+        <div class="login_header">
+            Log In
+        </div>
+    </h1>
+    <ul class= "login_content">
+        <form id="login-form">
+            <li class="login_content1">
+                <input type = "text" id="email" placeholder="Email" />
+            </li>
+            <li class="login_content1">
+                <input type = "password" id= "password" placeholder="Password" />
+            </li>
+            <li class="login_content2">
+                <input type = "submit" value= "Submit Form"/>
+            </li>
+        </form>
+        <form method = 'post' action='/logout'>
+            <button>Logout</button>
+        </form>
+    </ul>
+</div> -->

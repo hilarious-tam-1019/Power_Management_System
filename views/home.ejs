@@ -1,0 +1,35 @@
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="hero__text">
+        <h1>
+          Power Consumption Data
+        </h1>
+        <h2>
+            By Minh Tam & Vinh Dinh
+        </h2>
+        <p>
+            These following charts representing the data from our database, which was measures in the time frame of days. Every chart is measured in real time, with each chart can be refreshed to update the new values.
+            The first chart is the total ON time of devices in a day, notice that at November 5 2021, we start measuring the second device. With the first device in green and the second in blue.
+        </p>
+        
+    
+        <div class="chart" id="chart"> </div>
+        <div class="refreshbtn"> <button id="refresh">Refresh this chart</button></div>        
+        <script src="https://unpkg.com/@mongodb-js/charts-embed-dom"></script>
+        <script src="chartscript.js"></script>
+
+        <p>
+            This second chart representing the power consumption for each device. This is another way to measure how much a device used power in a day.
+        </p>
+        <div class="chart1" id="chart1"> </div>
+        <div class="refreshbtn1"> <button id="refresh1">Refresh this chart</button></div>        
+        <script src="https://unpkg.com/@mongodb-js/charts-embed-dom"></script>
+        <script src="chartscript1.js"></script>
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+

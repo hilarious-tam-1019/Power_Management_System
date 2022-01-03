@@ -1,0 +1,151 @@
+html {
+    font-size: 100%; 
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;;
+    line-height: 1.3; 
+    font-size: $font-sm;
+    font-weight: 400;
+    color: $grayishblue;
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+
+h1,h2,h3 {
+    margin-top: 0px;
+}
+
+a, a:visited, a:hover {
+     text-decoration: none;
+}
+//
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+//flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items : center;
+    }
+}
+
+//button 
+.button {
+    display: block;
+    margin-right: 85px;
+    background: linear-gradient(to right, #fc4a1a, #f7b733);  
+    font-size: $font-sm;
+    padding: 1.35rem 1.875rem;
+    border-radius: 50px;
+    width: 11.625rem;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    color: $white;
+    transition: opacity 300ms ease-in-out;
+}
+.button:hover {
+        opacity: 0.75;
+    }
+
+
+//Displaying chart
+.chart {
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    @include breakpoint-up(large) {
+
+    }
+}
+
+.refreshbtn{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.chart1 {
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.refreshbtn1 {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+
+
+//visibility
+
+.hide-for-mobile {
+    //hide for tablet and mobile
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    //hide for desktop viewport widths
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+
+.header__space.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+//shakehand image
+.shake-hand-image {
+    background-image: url('/images/shake-hand.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-content: center;
+    min-height: 17.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    
+
+    @include breakpoint-up(large) {
+        flex:1;
+        order: 2;
+        min-height: 41rem;
+        margin-right: 100px;
+        border-radius: 3px;
+    }
+
+}
+
+.p1 {
+    font-style: italic;
+    text-align: center;
+    margin-right: 150px;
+}

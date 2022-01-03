@@ -1,0 +1,59 @@
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+
+
+<div class = "login">
+    <form id="reg-form" class="login-form">
+        <div class="login-form__logo-container">
+            <img class="login-form__logo" src="/images/logo.png" alt="Logo">
+        </div>
+        <div class="login-form__content">
+            <div class="login-form__header">Creating your account</div>
+            <input class="login-form__input" type="text" id="email" placeholder="Username">
+            <input class="login-form__input" type="password" id= "password" placeholder="Password">
+            <button class="login-form__button" type="submit">Sign In</button>
+
+            <!-- <div class="login-form__links">
+                <form method = 'post' action='/logout'>
+                    <button class = >Logout</button>
+                </form>
+            </div> -->
+            
+        </div>
+    </form>
+</div>
+    
+    
+
+
+</body>
+
+<script src="script.js"></script>
+<script src="resform.js"></script> 
+
+</html>
+
+<!-- <section class="signup">
+    <h1 class="signup_header">           
+            <div>Sign Up </div>   
+    </h1>
+
+    <ul class= "signup_content">
+        <form id="reg-form">
+            <li>
+                <input type = "text" id="email" placeholder="Email" />
+            </li>
+            <li>
+                <input type = "password" id= "password" placeholder="Password" />
+            </li>
+            <li>
+                <input type = "submit" value= "Submit Form"/>
+            </li>
+        </form>
+        <form method = 'post' action='/logout'>
+            <button>Loutout</button>
+        </form>
+    </ul>
+</section> -->
