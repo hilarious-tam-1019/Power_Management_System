@@ -2,8 +2,11 @@
 
 ## Description
 This is an IOT project for power management in houses.
+
 The data value is pickup by sensors and send to Raspberry Pi 3 by MQTT protocol. 
+
 The Pi will then generate Json files to send to the database (MongoDB).
+
 The above code is the implementation to query the data and put it to display.
 
 ## Tech stack
@@ -55,7 +58,9 @@ The back-end is written using Express.js.
 
 ## Features to implement
 Using a front-end framework.
+
 Testing.
+
 Displaying in a variety of charts for better viewing.
 
 
